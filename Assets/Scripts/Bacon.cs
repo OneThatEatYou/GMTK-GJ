@@ -20,14 +20,12 @@ public class Bacon : MonoBehaviour
 
     private void Start()
     {
-        float freshnessRange = unfreshGB - freshGB;
-        float curFreshness = unfreshGB - (freshnessRange / maxClogClicks) * clogClicks;
-        baconRdr.color = new Color(1, curFreshness / 255, curFreshness / 255);
+        baconRdr.color = GameManager.Instance.CalculateFreshness(clogClicks);
     }
 
     public virtual void OnBaconCollide(Collider2D col)
     {
-        col.GetComponent<PlayerController>().Clog(clogClicks, baconRdr.color);
+        col.GetComponent<PlayerController>().Clog(clogClicks);
         col.GetComponent<Rigidbody2D>().velocity *= 0.1f;
     }
 

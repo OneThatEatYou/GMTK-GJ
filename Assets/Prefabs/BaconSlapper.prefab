@@ -95,6 +95,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clogClicks: 3
+  maxClogClicks: 10
+  freshGB: 90
+  unfreshGB: 255
   rotationSpeed: 10
 --- !u!1 &6149489442477090045
 GameObject:

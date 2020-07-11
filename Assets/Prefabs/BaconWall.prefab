@@ -71,7 +71,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca2c18bc29e4a84190e9f2c7991ad52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clogClicks: 3
+  clogClicks: 4
+  maxClogClicks: 7
+  freshGB: 255
+  unfreshGB: 190
 --- !u!1 &6672990942856022087
 GameObject:
   m_ObjectHideFlags: 0
