@@ -1,0 +1,875 @@
+fileFormatVersion: 2
+guid: e674a34acb508c5418edd30b59f154e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8633881525917383573
+    second: Rocket_0
+  - first:
+      213: -1771866121167276815
+    second: Rocket_1
+  - first:
+      213: 2091829175261615561
+    second: Rocket_2
+  - first:
+      213: 756911166660455246
+    second: Pipe
+  - first:
+      213: 403005533434085257
+    second: Bacon_0
+  - first:
+      213: 6961653080833796888
+    second: Player
+  - first:
+      213: 6266472923241529454
+    second: John
+  - first:
+      213: -5282911695883833476
+    second: Hooked_Bacon
+  - first:
+      213: 7021449457718125206
+    second: BaconSlapper_0
+  - first:
+      213: 7357123456376359846
+    second: Spritesheet_9
+  - first:
+      213: -7343860702648896561
+    second: Spritesheet_10
+  - first:
+      213: -3531878321590394162
+    second: Canvas
+  - first:
+      213: -4888718896546230129
+    second: Background_0
+  - first:
+      213: 2118958311618589481
+    second: Tile_0
+  - first:
+      213: 3228903892712671954
+    second: Tile_1
+  - first:
+      213: -513590313336307935
+    second: Tile_2
+  - first:
+      213: 1238036043553056152
+    second: Tile_3
+  - first:
+      213: -1623444342149152459
+    second: Tile_4
+  - first:
+      213: -1125653685376602382
+    second: Tile_5
+  - first:
+      213: 8527111519951476930
+    second: Tile_6
+  - first:
+      213: -7490898752223310767
+    second: Tile_7
+  - first:
+      213: 6288659706726585256
+    second: Tile_8
+  - first:
+      213: -2022454291514961620
+    second: Bacon_1
+  - first:
+      213: -3831202356669062874
+    second: Bacon_2
+  - first:
+      213: 8670926691811076372
+    second: Background_1
+  - first:
+      213: -6512771319330908805
+    second: BaconSlapper_1
+  - first:
+      213: -1260317311526373650
+    second: BaconSlapper_2
+  - first:
+      213: 7419593473033909056
+    second: Background_2
+  - first:
+      213: 4123474909421625494
+    second: Background_3
+  - first:
+      213: 4583289673117313467
+    second: Rocket_3
+  - first:
+      213: 5399601884874693798
+    second: Rocket_2
+  - first:
+      213: 4735375665114324730
+    second: Pipe
+  - first:
+      213: 7216629191016651444
+    second: Hanging_Bacon
+  - first:
+      213: -3332206485065865636
+    second: BaconSlapper
+  - first:
+      213: 5769956724132029914
+    second: Player
+  - first:
+      213: -6284306996831967130
+    second: HatMan
+  - first:
+      213: -1029436229247143400
+    second: Canvas
+  - first:
+      213: 9155231472630613657
+    second: Background_0
+  - first:
+      213: -6448914520323044390
+    second: Tile_0
+  - first:
+      213: 8768742673102718018
+    second: Button_0
+  - first:
+      213: 2314022550564037442
+    second: Button_1
+  - first:
+      213: -4399989721941848498
+    second: Tile_1
+  - first:
+      213: -1183731428016168853
+    second: Tile_2
+  - first:
+      213: 2401752518082830216
+    second: Tile_3
+  - first:
+      213: 3411045427079179176
+    second: Tile_4
+  - first:
+      213: 244056041600906683
+    second: Tile_5
+  - first:
+      213: 828832998005528226
+    second: Tile_6
+  - first:
+      213: 8657357237471645021
+    second: Tile_7
+  - first:
+      213: -253727130665565485
+    second: Tile_8
+  - first:
+      213: 4659560807072238421
+    second: Rocket_3
+  - first:
+      213: -7895179552996830595
+    second: Spritesheet_50
+  - first:
+      213: 6435912432560062591
+    second: Spritesheet_51
+  - first:
+      213: -6512771319330908805
+    second: Rocker_0
+  - first:
+      213: -1260317311526373650
+    second: Rocket_1
+  - first:
+      213: 5702021815828362590
+    second: Background_1
+  - first:
+      213: -8436841772966400499
+    second: Background_2
+  - first:
+      213: -3024301878494303455
+    second: Background_3
+  - first:
+      213: 8633881525917383573
+    second: Bacon
+  - first:
+      213: -8436841772966400499
+    second: BaconSlapper_pivot
+  - first:
+      213: 2529976422352931040
+    second: BaconSlapper_pivot
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rocker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75ddefbdfcfd95a0800000000000000
+      internalID: -6512771319330908805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocket_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 640
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6f1362514728ee0800000000000000
+      internalID: -1260317311526373650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocket_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 640
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac5c745e4d3fea40800000000000000
+      internalID: 5399601884874693798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe1b2d041f67b140800000000000000
+      internalID: 4735375665114324730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hanging_Bacon
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 400
+        width: 90
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba134e830e962460800000000000000
+      internalID: 7216629191016651444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaconSlapper
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 400
+        width: 90
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56656b4bdf91c1d0800000000000000
+      internalID: -3332206485065865636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 400
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5244fe111031050800000000000000
+      internalID: 5769956724132029914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HatMan
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66824520518a9c8a0800000000000000
+      internalID: -6284306996831967130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canvas
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 30, z: 30, w: 30}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8127ec42435b6b1f0800000000000000
+      internalID: -1029436229247143400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_0
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996cf92948aed0f70800000000000000
+      internalID: 9155231472630613657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb494d596ad086a0800000000000000
+      internalID: -6448914520323044390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_0
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244c81d9005d0b970800000000000000
+      internalID: 8768742673102718018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243ec90ef3f0d1020800000000000000
+      internalID: 2314022550564037442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e4948f8a810f2c0800000000000000
+      internalID: -4399989721941848498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6061a3b98a829fe0800000000000000
+      internalID: -1183731428016168853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f1abea03db45120800000000000000
+      internalID: 2401752518082830216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab66c15eb7765f20800000000000000
+      internalID: 3411045427079179176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5f8e04daf036300800000000000000
+      internalID: 244056041600906683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6dd38683b908b00800000000000000
+      internalID: 828832998005528226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d8721f98c152870800000000000000
+      internalID: 8657357237471645021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2cccad4849a7cf0800000000000000
+      internalID: -253727130665565485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocket_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 680
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b8fdaddd51aa040800000000000000
+      internalID: 4659560807072238421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e553af181a6a12f40800000000000000
+      internalID: 5702021815828362590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaconSlapper_pivot
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 720
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e29289b115aea80800000000000000
+      internalID: -8436841772966400499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12becc607758706d0800000000000000
+      internalID: -3024301878494303455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bacon
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 90
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bfc19e085b1d770800000000000000
+      internalID: 8633881525917383573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8c578d6284c1320800000000000000
+      internalID: 2529976422352931040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

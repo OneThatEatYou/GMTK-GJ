@@ -9,10 +9,7 @@ public class PlayerController : MonoBehaviour
     public float maxUpwardsVelocity;
     public float terminalVelocity;
 
-    [Header("Feedbacks")]
-    public Color cloggedColor;
     Color startColor;
-
     Rigidbody2D rb;
     SpriteRenderer rdr;
     bool isClogged;
@@ -55,7 +52,7 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(dir * forceMagnitude, ForceMode2D.Force);
     }
 
-    public void Clog(int clicks)
+    public void Clog(int clicks, Color color)
     {
         //wont get clogged again when already clogged
         if (isClogged)
@@ -63,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
         isClogged = true;
 
-        rdr.color = cloggedColor;
+        rdr.color = color;
         StartCoroutine(Unclog(clicks));
 
     }
