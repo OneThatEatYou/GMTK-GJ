@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     [Header("References")]
     public TextMeshProUGUI clogText;
     public string flyingAnimation = "isFlying";
+    public GameObject rocketObj;
+    public GameObject particle;
+    public AudioClip unclogSFX;
 
     [Header("Engine Settings")]
     public float forceMagnitude;
@@ -15,11 +18,16 @@ public class PlayerController : MonoBehaviour
     public float terminalVelocity;
     public float rotationSpeed;
 
+    [Header("Other Settings")]
+    public float walkingSpeed;
+
     Rigidbody2D rb;
     SpriteRenderer rdr;
     Animator anim;
     bool isClogged;
     Color startColor;
+    bool hasRocket = false;
+    bool canMove = false;
 
     bool IsClogged
     {
@@ -45,6 +53,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+        { return; }
+
+        if (!hasRocket)
+        {
+            float horizontal = Input.GetAxis("Horizontal");
+
+            Move(horizontal);
+
+            return;
+        }
+
         if (Input.GetMouseButton(0))
         {
             Fly();
@@ -67,6 +87,22 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, terminalVelocity, maxUpwardsVelocity));
+    }
+
+    public void CanMove()
+    {
+        canMove = !canMove;
+    }
+
+    public void EnableRocket()
+    {
+        rocketObj.SetActive(true);
+        hasRocket = true;
+    }
+
+    void Move(float horizontalInput)
+    {
+        rb.velocity = new Vector2(horizontalInput * walkingSpeed, rb.velocity.y);
     }
 
     void Fly()
@@ -103,6 +139,7 @@ public class PlayerController : MonoBehaviour
         rdr.color = GameManager.Instance.CalculateFreshness(clicks);
         StartCoroutine(Unclog(clicks));
 
+        InstantiateParticle(clicks);
     }
 
     void UpdateClogText(int remainingClicks)
@@ -119,6 +156,7 @@ public class PlayerController : MonoBehaviour
     {
         int remainingClicks = clicks;
         UpdateClogText(remainingClicks);
+        AudioManager.PlayClipAtPoint(unclogSFX, transform.position);
 
         while (remainingClicks != 0)
         {
@@ -127,11 +165,24 @@ public class PlayerController : MonoBehaviour
                 remainingClicks--;
                 UpdateClogText(remainingClicks);
 
-                //play particle
+                InstantiateParticle(remainingClicks);
+
+                AudioManager.PlayClipAtPoint(unclogSFX, transform.position);
             }
 
             yield return null;
         }
         IsClogged = false;
+    }
+
+    void InstantiateParticle(int clicks)
+    {
+        Color col = GameManager.Instance.CalculateFreshness(clicks);
+        GameObject obj = Instantiate(particle, transform.position, Quaternion.identity);
+        ParticleSystem ps = obj.GetComponent<ParticleSystem>();
+        var main = ps.main;
+        main.startColor = col;
+
+        Destroy(obj, main.startLifetime.constantMax);
     }
 }

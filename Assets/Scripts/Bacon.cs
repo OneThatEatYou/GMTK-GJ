@@ -5,9 +5,8 @@ using UnityEngine;
 public class Bacon : MonoBehaviour
 {
     public int clogClicks;
-    public int maxClogClicks = 10;
-    public int freshGB = 90;
-    public int unfreshGB = 190;
+
+    public bool paused = false;
 
     protected Rigidbody2D rb;
     protected SpriteRenderer baconRdr;

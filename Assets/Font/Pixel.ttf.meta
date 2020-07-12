@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 492aa74ff27147c4fbd6359d2bd3f6fb
+guid: b99234406742b8548b8dedbeaa3f960c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Press Start
+  fontName: Pixel
   fontNames:
-  - Press Start
+  - Pixel
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

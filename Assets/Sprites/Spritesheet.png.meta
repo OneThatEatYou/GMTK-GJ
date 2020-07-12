@@ -194,6 +194,39 @@ TextureImporter:
   - first:
       213: 6181410119696585137
     second: Background_3
+  - first:
+      213: 9131579850945935038
+    second: Bacon_0
+  - first:
+      213: -3024301878494303455
+    second: Bacon_1
+  - first:
+      213: 6181410119696585137
+    second: Bacon_3
+  - first:
+      213: 403005533434085257
+    second: Spritesheet_4
+  - first:
+      213: -1713032401207270855
+    second: Bacon_4
+  - first:
+      213: 6266472923241529454
+    second: Bacon_2
+  - first:
+      213: -5282911695883833476
+    second: Background_2
+  - first:
+      213: 7021449457718125206
+    second: Background_3
+  - first:
+      213: 9131579850945935038
+    second: Fire_0
+  - first:
+      213: -3024301878494303455
+    second: Fire_1
+  - first:
+      213: 4289654689674074399
+    second: Fire_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -786,13 +819,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_2
+      name: Fire_1
       rect:
         serializedVersion: 2
-        x: 240
-        y: 80
-        width: 80
-        height: 80
+        x: 90
+        y: 650
+        width: 70
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -849,6 +882,111 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bacon_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 425
+        width: 90
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1158bd0c7c8c550800000000000000
+      internalID: 6181410119696585137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 650
+        width: 70
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb63fb54e73e9be70800000000000000
+      internalID: 9131579850945935038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bacon_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 400
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9326e4d6b161a38e0800000000000000
+      internalID: -1713032401207270855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bacon_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 465
+        width: 90
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e604a682cebf6f650800000000000000
+      internalID: 6266472923241529454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f661b7dc35fa6b0800000000000000
+      internalID: -5282911695883833476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Background_3
       rect:
         serializedVersion: 2
@@ -863,8 +1001,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b1158bd0c7c8c550800000000000000
-      internalID: 6181410119696585137
+      spriteID: 692e5af9413317160800000000000000
+      internalID: 7021449457718125206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 650
+        width: 70
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f199c13763ae78b30800000000000000
+      internalID: 4289654689674074399
       vertices: []
       indices: 
       edges: []

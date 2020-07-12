@@ -8,6 +8,9 @@ public class BaconSlapper : Bacon
 
     private void FixedUpdate()
     {
+        if (paused)
+        { return; }
+
         rb.MoveRotation(rb.rotation + rotationSpeed);
     }
 }

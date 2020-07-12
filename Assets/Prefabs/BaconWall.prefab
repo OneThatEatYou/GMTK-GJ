@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6672990942679398363}
   - component: {fileID: 6672990942679398362}
   - component: {fileID: 6672990942679398360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BaconWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,9 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clogClicks: 4
-  maxClogClicks: 7
-  freshGB: 255
-  unfreshGB: 190
+  paused: 0
 --- !u!1 &6672990942856022087
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6672990942856022084}
   - component: {fileID: 6672990942856022085}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bacon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
