@@ -42,6 +42,8 @@ public class ControlButton : MonoBehaviour
             yield return null;
         }
 
+        Destroy(blockingBacon);
+
         yield return new WaitForSeconds(delay);
 
         OutOfControl();
