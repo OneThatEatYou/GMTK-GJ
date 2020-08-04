@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     public string flyingAnimation = "isFlying";
     public GameObject rocketObj;
     public GameObject particle;
+    public AudioClip clogSFX;
     public AudioClip unclogSFX;
+    public Vector2 unclogPitchRange;
 
     [Header("Engine Settings")]
     public float forceMagnitude;
@@ -140,6 +142,8 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(Unclog(clicks));
 
         InstantiateParticle(clicks);
+
+        AudioManager.PlayClipAtPoint(clogSFX, transform.position);
     }
 
     void UpdateClogText(int remainingClicks)
@@ -156,7 +160,6 @@ public class PlayerController : MonoBehaviour
     {
         int remainingClicks = clicks;
         UpdateClogText(remainingClicks);
-        AudioManager.PlayClipAtPoint(unclogSFX, transform.position);
 
         while (remainingClicks != 0)
         {
@@ -167,7 +170,8 @@ public class PlayerController : MonoBehaviour
 
                 InstantiateParticle(remainingClicks);
 
-                AudioManager.PlayClipAtPoint(unclogSFX, transform.position);
+                var s = AudioManager.PlayClipAtPoint(unclogSFX, transform.position);
+                s.pitch = Random.Range(unclogPitchRange.x, unclogPitchRange.y);
             }
 
             yield return null;

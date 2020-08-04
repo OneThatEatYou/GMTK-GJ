@@ -1,27 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class ControlButton : MonoBehaviour
 {
     [Header("Animation Setttings")]
-    //number of seconds to wait after bacon fall for button to fly
-    public float delay;
+    public TimelineAsset oocTimeline;
     public float thrust;
     public string animationStateRef = "isFlying";
-    public GameObject blockingBacon;
-    public float baconDropSpeed;
+    public Sprite pressedButton;
+    public AudioClip sfx;
 
     [Space]
     public Dialogue dialogue;
 
     bool isPressed = false;
-
     Animator anim;
+    SpriteRenderer rend;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        rend = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,27 +32,13 @@ public class ControlButton : MonoBehaviour
 
         isPressed = true;
 
-        StartCoroutine(OOCAnimation());
-    }
-
-    IEnumerator OOCAnimation()
-    {
+        GameManager.Instance.PlayCutscene(oocTimeline);
         DialogueManager.Instance.Dialogue = dialogue;
-
-        while (blockingBacon.transform.position.y > Camera.main.transform.position.y - GameManager.Instance.ScreenWorldSize.y)
-        {
-            blockingBacon.transform.Translate(Vector2.down * baconDropSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        Destroy(blockingBacon);
-
-        yield return new WaitForSeconds(delay);
-
-        OutOfControl();
+        rend.sprite = pressedButton;
+        AudioManager.PlayClipAtPoint(sfx, Vector2.zero);
     }
 
-    void OutOfControl()
+    public void OutOfControl()
     {
         StartCoroutine(FlyButton());
 

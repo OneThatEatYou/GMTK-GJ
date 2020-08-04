@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour
     public int freshGB = 90;
     public int unfreshGB = 255;
 
+    public PlayableDirector playableDir;
+
     public Vector2 ScreenWorldSize
     {
         get
@@ -48,5 +52,11 @@ public class GameManager : MonoBehaviour
         float curFreshness = unfreshGB - (freshnessRange / maxClogClicks) * clicks;
 
         return new Color(1, curFreshness / 255, curFreshness / 255);
+    }
+
+    public void PlayCutscene(TimelineAsset timeline)
+    {
+        playableDir.playableAsset = timeline;
+        playableDir.Play();
     }
 }

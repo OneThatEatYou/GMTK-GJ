@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 public class MenuController : MonoBehaviour
 {
-    public PlayableDirector playableDir;
+    public TimelineAsset introTimeline;
     public Dialogue dialogue;
     public float fadeTime;
 
@@ -30,7 +30,7 @@ public class MenuController : MonoBehaviour
 
     void StartGame()
     {
-        playableDir.Play();
+        GameManager.Instance.PlayCutscene(introTimeline);
         DialogueManager.Instance.Dialogue = dialogue;
         playedAnim = true;
         StartCoroutine(FadeoutTitle(fadeTime));
