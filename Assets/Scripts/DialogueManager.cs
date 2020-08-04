@@ -37,6 +37,25 @@ public class DialogueManager : MonoBehaviour
 
     AudioSource source;
 
+    Dialogue curDialogue;
+
+    public Dialogue Dialogue
+    {
+        get
+        {
+            return curDialogue;
+        }
+        set
+        {
+            curDialogue = value;
+
+            if (curDialogue)
+            {
+                StartDialogue(curDialogue);
+            }
+        }
+    }
+
     private void Awake()
     {
         source = GetComponent<AudioSource>();
@@ -86,6 +105,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         dialogueText.text = "";
+        curDialogue = null;
     }
 
     void PlayAudio()

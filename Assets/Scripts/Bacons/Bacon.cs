@@ -6,7 +6,7 @@ public class Bacon : MonoBehaviour
 {
     public int clogClicks;
 
-    public bool paused = false;
+    public bool paused = true;
 
     protected Rigidbody2D rb;
     protected SpriteRenderer baconRdr;

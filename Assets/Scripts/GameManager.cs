@@ -31,6 +31,17 @@ public class GameManager : MonoBehaviour
     public int freshGB = 90;
     public int unfreshGB = 255;
 
+    public Vector2 ScreenWorldSize
+    {
+        get
+        {
+            float height = 2f * Camera.main.orthographicSize;
+            float width = height * Camera.main.aspect;
+
+            return new Vector2(width, height);
+        }
+    }
+
     public Color CalculateFreshness(int clicks)
     {
         float freshnessRange = unfreshGB - freshGB;

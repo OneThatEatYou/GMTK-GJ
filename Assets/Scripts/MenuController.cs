@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 public class MenuController : MonoBehaviour
 {
     public PlayableDirector playableDir;
-    public DialogueTrigger dialogue;
+    public Dialogue dialogue;
     public float fadeTime;
 
     bool playedAnim = false;
@@ -31,7 +31,7 @@ public class MenuController : MonoBehaviour
     void StartGame()
     {
         playableDir.Play();
-        dialogue.TriggerDialogue();
+        DialogueManager.Instance.Dialogue = dialogue;
         playedAnim = true;
         StartCoroutine(FadeoutTitle(fadeTime));
     }

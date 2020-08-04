@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class ControlButton : MonoBehaviour
 {
+    [Header("Animation Setttings")]
+    //number of seconds to wait after bacon fall for button to fly
     public float delay;
-    public BaconSlapper[] stationarySlappers;
     public float thrust;
-    public DialogueTrigger dialogueTrigger;
     public string animationStateRef = "isFlying";
     public GameObject blockingBacon;
     public float baconDropSpeed;
 
+    [Space]
+    public Dialogue dialogue;
+
     bool isPressed = false;
-    bool startAnimating = false;
 
     Animator anim;
 
@@ -34,9 +36,9 @@ public class ControlButton : MonoBehaviour
 
     IEnumerator OOCAnimation()
     {
-        dialogueTrigger.TriggerDialogue();
+        DialogueManager.Instance.Dialogue = dialogue;
 
-        while (blockingBacon.transform.position.y > -13)
+        while (blockingBacon.transform.position.y > Camera.main.transform.position.y - GameManager.Instance.ScreenWorldSize.y)
         {
             blockingBacon.transform.Translate(Vector2.down * baconDropSpeed * Time.deltaTime);
             yield return null;
@@ -51,26 +53,27 @@ public class ControlButton : MonoBehaviour
 
     void OutOfControl()
     {
-        startAnimating = true;
+        StartCoroutine(FlyButton());
 
-        for (int i = 0; i < stationarySlappers.Length; i++)
+        Bacon[] bacons = FindObjectsOfType<Bacon>();
+
+        for (int i = 0; i < bacons.Length; i++)
         {
-            stationarySlappers[i].paused = false;
+            bacons[i].paused = false;
         }
 
         anim.SetBool(animationStateRef, true);
     }
 
-    private void Update()
+    IEnumerator FlyButton()
     {
-        if (!startAnimating)
-        { return; }
-
-        transform.Translate(Vector2.up * thrust * Time.deltaTime);
-
-        if (transform.position.y > 10)
+        while (transform.position.y < Camera.main.transform.position.y + GameManager.Instance.ScreenWorldSize.y)
         {
-            Destroy(gameObject);
+            transform.Translate(Vector2.up * thrust * Time.deltaTime);
+
+            yield return null;
         }
+
+        Destroy(gameObject);
     }
 }
