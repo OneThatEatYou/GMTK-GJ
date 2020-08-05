@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer rdr;
     Animator anim;
+    AudioSource audioSource;
     bool isClogged;
     Color startColor;
     bool hasRocket = false;
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rdr = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -78,11 +80,17 @@ public class PlayerController : MonoBehaviour
             else
             {
                 anim.SetBool(flyingAnimation, true);
+
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
             }
         }
         else
         {
             anim.SetBool(flyingAnimation, false);
+            audioSource.Stop();
         }
     }
 

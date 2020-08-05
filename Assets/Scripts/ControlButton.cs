@@ -7,7 +7,8 @@ public class ControlButton : MonoBehaviour
 {
     [Header("Animation Setttings")]
     public TimelineAsset oocTimeline;
-    public float thrust;
+    public float maxThrust;
+    public float accelTime;
     public string animationStateRef = "isFlying";
     public Sprite pressedButton;
     public AudioClip sfx;
@@ -36,10 +37,13 @@ public class ControlButton : MonoBehaviour
         DialogueManager.Instance.Dialogue = dialogue;
         rend.sprite = pressedButton;
         AudioManager.PlayClipAtPoint(sfx, Vector2.zero);
+
+        GameManager.Instance.startTime = Time.time;
     }
 
     public void OutOfControl()
     {
+        GetComponent<AudioSource>().Play();
         StartCoroutine(FlyButton());
 
         Bacon[] bacons = FindObjectsOfType<Bacon>();
@@ -54,9 +58,21 @@ public class ControlButton : MonoBehaviour
 
     IEnumerator FlyButton()
     {
+        float time = 0f;
+
         while (transform.position.y < Camera.main.transform.position.y + GameManager.Instance.ScreenWorldSize.y)
         {
+            float thrust = maxThrust * Mathf.Sin((time / accelTime) * (Mathf.PI / 2));
             transform.Translate(Vector2.up * thrust * Time.deltaTime);
+
+            if (time < accelTime)
+            {
+                time += Time.deltaTime;
+            }
+            else
+            {
+                time = accelTime;
+            }
 
             yield return null;
         }

@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
 
     public PlayableDirector playableDir;
 
+    public float startTime;
+
     public Vector2 ScreenWorldSize
     {
         get

@@ -20,5 +20,10 @@ public class WinButton : MonoBehaviour
 
         var s = AudioManager.PlayClipAtPoint(soundEffect, Vector2.zero);
         s.volume = vol;
+
+        if (FindObjectOfType<NGHelper>())
+        {
+            FindObjectOfType<NGHelper>().OnWinGame();
+        }
     }
 }
