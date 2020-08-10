@@ -13,7 +13,8 @@ public class RocketPickup : MonoBehaviour
 
     void PickUpRocket(Collider2D col)
     {
-        AudioManager.PlayClipAtPoint(sfx, transform.position);
+        var a = AudioManager.PlayClipAtPoint(sfx, transform.position);
+        a.volume = 0.5f;
 
         col.GetComponent<PlayerController>().EnableRocket();
         Destroy(gameObject);

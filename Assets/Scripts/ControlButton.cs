@@ -36,7 +36,8 @@ public class ControlButton : MonoBehaviour
         GameManager.Instance.PlayCutscene(oocTimeline);
         DialogueManager.Instance.Dialogue = dialogue;
         rend.sprite = pressedButton;
-        AudioManager.PlayClipAtPoint(sfx, Vector2.zero);
+        var a = AudioManager.PlayClipAtPoint(sfx, Vector2.zero);
+        a.volume = 0.5f;
 
         GameManager.Instance.startTime = Time.time;
     }

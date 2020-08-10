@@ -18160,36 +18160,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &373427931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 373427933}
-  m_Layer: 0
-  m_Name: DialogTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &373427933
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373427931}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.63, y: 3.38, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2095094784}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &379952433
 GameObject:
   m_ObjectHideFlags: 0
@@ -18322,7 +18292,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ee05ba523f0f34d44a0d5533958d1a30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39843,7 +39813,7 @@ MonoBehaviour:
   particle: {fileID: 7549379796324971349, guid: 0f15262aa95f6ee4288a97d842d7d7e2,
     type: 3}
   clogSFX: {fileID: 8300000, guid: ab8b4042c15cb0b4da96bca10d8fe3cd, type: 3}
-  unclogSFX: {fileID: 8300000, guid: df85b3e8655da8a4185f8f10ec13d439, type: 3}
+  unclogSFX: {fileID: 8300000, guid: 99e6f7c9216a05248b5fdb7540814cd1, type: 3}
   unclogPitchRange: {x: 0.8, y: 1.2}
   forceMagnitude: 30
   maxUpwardsVelocity: 10
@@ -40511,7 +40481,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 574054477
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -42382,7 +42352,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 47
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -46637,7 +46607,7 @@ PrefabInstance:
     - target: {fileID: 6672990942679398360, guid: ae296273d1d89594d94495657a29ff5b,
         type: 3}
       propertyPath: clogClicks
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6672990942679398363, guid: ae296273d1d89594d94495657a29ff5b,
         type: 3}
@@ -46726,7 +46696,6 @@ Transform:
   m_Children:
   - {fileID: 126546886}
   - {fileID: 1318967969}
-  - {fileID: 373427933}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

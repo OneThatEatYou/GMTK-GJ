@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   sentences:
-  - Your work here is pretty simple.
-  - You just have to press the control button.
-  - Don't question where we get our bacons.
-  - Use 'A/D' to move.
+  - "Your work here is \npretty simple."
+  - "You just have to \npress the \ncontrol button."
+  - "Don't question \nwhere we get our \nbacons."
+  - "Use 'A/D' to \nmove."

@@ -66,6 +66,15 @@ public class NGHelper : MonoBehaviour
         Debug.Log("Sent score to sever");
     }
 
+    void SubmitEvent(string eventName)
+    {
+        io.newgrounds.components.Event.logEvent clearEvent = new io.newgrounds.components.Event.logEvent();
+        clearEvent.event_name = eventName;
+        clearEvent.callWith(core);
+
+        Debug.Log("Submitted event " + eventName + " to sever");
+    }
+
     public void OnWinGame()
     {
         UnlockMedal(winMedalId);

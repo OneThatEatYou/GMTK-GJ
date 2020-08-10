@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: OutOfControl
   m_EditorClassIdentifier: 
   sentences:
-  - Oh no, you pressed the wrong button!
-  - Take the jetpack and chase after the button or you're fired.
+  - "Oh no, you \npressed the \nwrong button!"
+  - "Take the jetpack \nand chase after \nthe button or \nyou're fired."
+  - Hold 'LEFT MOUSE BUTTON' to fly.
   - Be careful not to get it clogged by bacons.
-  - The fresher the bacon, the harder it is to unclog.
+  - "The fresher the bacon, the \nharder it is to \nunclog."
